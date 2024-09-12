@@ -1,0 +1,102 @@
+strong {
+  font-family: "PoppinsSemiBold";
+  color: #b0242a;
+}
+
+.general-container {
+  //---------ABOUT US--------------
+  .about-us-container {
+    background-image: url("../../../assets/icons/Fondo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    .about-us-title-logo-container {
+      .about-us-title {
+        font-family: "PoppinsSemiBold";
+        text-align: center;
+        padding: 4% 0;
+      }
+      .about-us-logo {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+    }
+    .about-us-info-container {
+      padding: 3%;
+      .about-us-description {
+        font-family: "PoppinsSemiBold";
+        font-size: 1.2em;
+      }
+      .about-us-list {
+        padding: 4% 6%;
+        font-family: "PoppinsRegular";
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .general-container {
+    //---------ABOUT US--------------
+    .about-us-container {
+      .about-us-title-logo-container {
+        .about-us-title {
+          font-size: 1.4em;
+        }
+        .about-us-logo {
+          img {
+            width: 20%;
+          }
+        }
+      }
+      .about-us-info-container {
+        padding: 3%;
+        .about-us-description {
+          font-size: 1.4em;
+        }
+        .about-us-list {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .general-container {
+    //---------ABOUT US--------------
+    .about-us-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 2% 9%;
+      .about-us-title-logo-container {
+        width: 100%;
+        .about-us-title {
+          font-size: 1.9em;
+        }
+        .about-us-logo {
+          img {
+            width: 50%;
+          }
+        }
+      }
+      .about-us-info-container {
+        width: 100%;
+        padding: 3% 2%;
+        .about-us-description {
+          font-size: 1.4em;
+        }
+        .about-us-list {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+

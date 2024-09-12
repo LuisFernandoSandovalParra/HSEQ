@@ -1,0 +1,51 @@
+<div class="contact-container">
+  <div class="title-info-container">
+    <div class="contact-title">
+      <h1 data-aos="fade-down" data-aos-duration="1000">Contáctanos</h1>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="contact-info">
+      <div class="contact-info-description">
+        <img src="../../../assets/icons/Correo.svg" alt="Correo">
+        hseq.proyectosdeingenieria@gmail.com
+      </div>
+      <div class="contact-info-description">
+        <img src="../../../assets/icons/time-icon.svg" alt="Horario">
+        Lunes a sábado de 8:00 am a 8:00 pm
+      </div>
+      <div class="contact-info-description">
+        <img src="../../../assets/icons/location-icon.svg" alt="Ubicación">
+        Sedes: Tunja y Sogamoso
+      </div>
+      <div class="contact-info-description">
+        <img src="../../../assets/icons/phone-icon.svg" alt="Teléfono">
+        313 610 8653
+      </div>
+    </div>
+  </div>
+  <div class="form-container">
+    <form data-aos="zoom-in" data-aos-duration="1000" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+      <div class="form-image">
+        <img src="../../../assets/icons/email-icon.svg" alt="Formulario">
+      </div>
+      <div class="input-container">
+        <label class="label-input" for="">Nombre:</label>
+        <input type="text" formControlName="fullName" placeholder="Ingrese su nombre completo" required>
+      </div>
+      <div class="input-container">
+        <label class="label-input" for="">Correo:</label>
+        <input type="email" formControlName="email" placeholder="Ingrese su correo electronico" required>
+      </div>
+      <div class="input-container">
+        <label class="label-input" for="">Asunto:</label>
+        <input type="text" formControlName="affair" placeholder="Ingrese el asunto" required>
+      </div>
+      <div class="input-container">
+        <label for="">Mensaje:</label>
+        <textarea formControlName="message" cols="21" rows="10" placeholder="Ingrese sus dudas, inquietudes, etc" required></textarea>
+      </div>
+      <div class="send-btn">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

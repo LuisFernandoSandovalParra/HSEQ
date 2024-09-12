@@ -1,0 +1,252 @@
+.contact-container {
+  .title-info-container {
+    padding: 5% 0;
+    .contact-title {
+      font-family: "PoppinsSemiBold";
+      text-align: center;
+      font-size: 1.2em;
+      padding: 2%;
+      color: #bf0022;
+    }
+    .contact-info {
+      padding: 2%;
+      .contact-info-description {
+        font-family: "PoppinsRegular";
+        padding: 1%;
+        img {
+          width: 5%;
+        }
+      }
+    }
+  }
+  .form-container {
+    form {
+      background-color: #bf0022;
+      .form-image {
+        text-align: center;
+        padding: 2%;
+        img {
+          border-radius: 100px;
+          padding: 3%;
+          background-color: white;
+          width: 10%;
+        }
+      }
+      .input-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+        border-radius: 30px;
+        font-family: "PoppinsSemiBold";
+        padding: 1% 3%;
+        margin: 4%;
+        label {
+          color: #4d4d4d;
+        }
+        .label-input{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        input{
+          padding: 2%;
+          font-family: "PoppinsSemiBold";
+          font-size: 1em;
+          border: none;
+          width: 100%;
+          border-radius: 20px;
+        }
+        textarea{
+          padding: 1%;
+          font-family: "PoppinsSemiBold";
+          font-size: 1em;
+          border: none;
+          width: 90%;
+          border-radius: 20px;
+        }
+      }
+      .send-btn{
+        text-align: center;
+        padding: 2% 0 4% 0;
+        button{
+          font-family: 'PoppinsSemiBold';
+          font-size: 1.3em;
+          color: white;
+          background-color: #CDAE80;
+          padding: 2% 5%;
+          border-radius: 20px;
+          border: 1px solid #CDAE80;
+        }
+        button:hover{
+          background-color: #ffdfb0;
+        }
+        button:active{
+          background-color: #b69057;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .contact-container {
+    background-image: url('../../../assets/icons/edge-one.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    .title-info-container {
+      .contact-title {
+        font-family: "PoppinsSemiBold";
+        text-align: center;
+        font-size: 1.5em;
+        padding: 4%;
+        color: #bf0022;
+      }
+      .contact-info {
+        padding: 2%;
+        .contact-info-description {
+          font-family: "PoppinsRegular";
+          font-size: 1.5em;
+          text-align: center;
+          padding: 1%;
+          img {
+            width: 5%;
+          }
+        }
+      }
+    }
+    .form-container {
+      margin: 5%;
+      form {
+        border-radius: 60px 0px 60px 60px;
+        .input-container {
+          padding: 1% 3%;
+          margin: 3% 10%;
+          label {
+            font-size: 1.7em;
+          }
+          input{
+            font-size: 1.7em;
+          }
+          textarea{
+            font-size: 1.7em;
+          }
+        }
+        .send-btn{
+          button{
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    background-image: url('../../../assets/icons/edge-three.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    .title-info-container {
+      width: 100%;
+      padding: 7% 5% 7% 15%;
+      .contact-title {
+        font-family: "PoppinsSemiBold";
+        text-align: left;
+        font-size: 1.8em;
+        padding: 4% 4% 2% 4%;
+        color: #bf0022;
+      }
+      .contact-info {
+        padding: auto;
+        .contact-info-description {
+          font-family: "PoppinsRegular";
+          font-size: 1.2em;
+          text-align: left;
+          padding: 0%;
+          img {
+            width: 4%;
+          }
+        }
+      }
+    }
+    .form-container {
+      width: 100%;
+      margin-right: 15%;
+      form {
+        background-color: #bf0022;
+        padding: 0 5%;
+        border-radius: 60px 0px 60px 60px;
+        .form-image {
+          text-align: center;
+          padding: 2%;
+          img {
+            border-radius: 100px;
+            padding: 3%;
+            background-color: white;
+            width: 10%;
+          }
+        }
+        .input-container {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          background-color: white;
+          border-radius: 30px;
+          font-family: "PoppinsSemiBold";
+          padding: 1% 5%;
+          margin: 2% 6%;
+          label {
+            color: #4d4d4d;
+          }
+          .label-input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          input{
+            padding: 2%;
+            font-family: "PoppinsSemiBold";
+            font-size: 1em;
+            border: none;
+            width: 100%;
+            border-radius: 20px;
+          }
+          textarea{
+            padding: 1%;
+            font-family: "PoppinsSemiBold";
+            font-size: 1em;
+            border: none;
+            width: 90%;
+            border-radius: 20px;
+          }
+        }
+        .send-btn{
+          text-align: center;
+          padding: 2% 0 4% 0;
+          button{
+            font-family: 'PoppinsSemiBold';
+            font-size: 1.3em;
+            color: white;
+            background-color: #CDAE80;
+            padding: 2% 5%;
+            border-radius: 20px;
+            border: 1px solid #CDAE80;
+          }
+          button:hover{
+            background-color: #ffdfb0;
+          }
+          button:active{
+            background-color: #b69057;
+          }
+        }
+      }
+    }
+  }
+}

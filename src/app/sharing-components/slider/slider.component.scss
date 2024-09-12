@@ -1,0 +1,303 @@
+strong {
+  font-family: "PoppinsSemiBold";
+  color: #b0242a;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: auto;
+  overflow: hidden;
+  .slider-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% 100%;
+    animation-name: mover;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    .slide-one {
+      padding: 4% 0;
+      .title-slide-one {
+        font-size: 1.3em;
+        text-align: center;
+        p {
+          font-family: "PoppinsRegular";
+        }
+        h1 {
+          font-family: "PoppinsSemiBold";
+        }
+        h2 {
+          font-family: "PoppinsRegular";
+          background-color: #b0242a;
+          color: white;
+          strong {
+            color: white;
+          }
+        }
+      }
+      .image-slide-one {
+        display: none;
+      }
+      .boxes-info-container {
+        padding: 0 2%;
+        .box {
+          display: flex;
+          box-shadow: 0px 15px 25px rgb(black, 0.9);
+          border-radius: 50px;
+          padding: 2% 4%;
+          margin: 4% 0;
+          min-height: 20vh;
+          .image-box {
+            display: flex;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            img {
+              width: 60%;
+            }
+          }
+          .box-info {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: center;
+            align-content: center;
+            .title-box {
+              font-family: "PoppinsSemiBold";
+            }
+            .description-box {
+              font-family: "PoppinsRegular";
+            }
+          }
+        }
+      }
+    }
+    .slide-two {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title-slider-two {
+        font-size: 1.4em;
+        text-align: center;
+        padding: 10%;
+        p {
+          font-family: "PoppinsRegular";
+        }
+        h1 {
+          font-family: "PoppinsSemiBold";
+        }
+      }
+      .image-slider-two {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .container{
+    //---------SLIDER--------------
+    .slider-container {
+      .slide-one {
+        padding: 4% 0;
+        .title-image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .title-slide-one {
+            width: 100%;
+          }
+          .image-slide-one {
+            display: block;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .boxes-info-container {
+          display: flex;
+          flex-grow: 1;
+          .box {
+            display: flex;
+            flex-direction: column;
+            padding: 2% 2%;
+            margin: 2% 1%;
+            min-height: 100%;
+            .image-box {
+              width: 100%;
+              img {
+                width: 40%;
+              }
+            }
+            .box-info {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .slide-two{
+        justify-content: center;
+        align-items: center;
+        .title-slider-two {
+          font-size: 1.4em;
+          text-align: center;
+          padding: 6%;
+          p {
+            font-family: "PoppinsRegular";
+          }
+          h1 {
+            font-family: "PoppinsSemiBold";
+          }
+        }
+        .image-slider-two {
+          width: 70%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container{
+
+    .slider-container {
+      .slide-one {
+        position: relative;
+        padding: 0 0 9% 0;
+        .title-image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .title-slide-one {
+            width: 54%;
+            font-size: 2em;
+            text-align: left;
+            padding: 0 13%;
+            h2 {
+              padding: 1% 1%;
+              border-radius: 40px;
+              text-align: center;
+              font-size: 1em;
+            }
+          }
+          .image-slide-one {
+            display: block;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .boxes-info-container {
+          display: flex;
+          flex-grow: 1;
+          position: absolute;
+          top: 75%;
+          padding: 0 5%;
+          .box {
+            background-color: white;
+            padding: 1% 1%;
+            margin: 0 2% 2% 0;
+            min-height: 100%;
+            width: 100%;
+            .image-box {
+              width: 40%;
+              img {
+                width: 50%;
+              }
+            }
+            .box-info {
+              width: 100%;
+              font-size: 90%;
+              .title-box {
+                font-family: "PoppinsBlack";
+              }
+            }
+          }
+        }
+      }
+      .slide-two {
+        display: flex;
+        padding: 1% 0;
+        justify-content: center;
+        align-items: center;
+        .title-slider-two {
+          width: 53%;
+          font-size: 2em;
+          text-align: left;
+          padding: 0 13%;
+          p {
+            font-family: "PoppinsRegular";
+          }
+          h1 {
+            font-family: "PoppinsSemiBold";
+          }
+        }
+        .image-slider-two {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .slide-two{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .title-slider-two {
+          width: 20%;
+          font-size: 2em;
+          text-align: left;
+          padding: 0 14%;
+          p {
+            font-family: "PoppinsRegular";
+          }
+          h1 {
+            font-family: "PoppinsSemiBold";
+          }
+        }
+        .image-slider-two {
+          width: 100%;
+          padding: 0;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes mover {
+  25% {
+    margin-left: 0%;
+  }
+  28% {
+    margin-left: -100%;
+  }
+  54% {
+    margin-left: -100%;
+  }
+  58% {
+    margin-left: -200%;
+  }
+  84% {
+    margin-left: -200%;
+  }
+  85% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}

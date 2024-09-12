@@ -1,0 +1,194 @@
+.services-container {
+  .service {
+    padding: 3%;
+    .title-info-container {
+      .title {
+        font-family: "PoppinsSemiBold";
+      }
+      .info-list {
+        font-family: "PoppinsRegular";
+        font-size: 1.1em;
+        padding: 8%;
+        ul {
+          list-style: circle;
+        }
+      }
+    }
+  }
+  hr {
+    border: 5px solid #bf0022;
+    margin: 5% 15%;
+  }
+}
+.our-experience-container{
+  background-color: #bf0022;
+  color: white;
+  padding: 5%;
+  .title-our-experience{
+    font-family: 'PoppinsSemiBold';
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .description-our-experience{
+    font-family: 'PoppinsRegular';
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 5% 0;
+  }
+  .logos-container{
+    .logo{
+      text-align: center;
+      padding: 5% 0;
+      img{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .services-container {
+    .service {
+      display: flex;
+      padding: 9% 4%;
+      background-image: url("../../../assets/icons/edge-one.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 18%;
+      .title-info-container {
+        width: 100%;
+        .title {
+          font-family: "PoppinsSemiBold";
+          font-size: 1.2em;
+        }
+        .info-list {
+          font-family: "PoppinsRegular";
+          font-size: 1.2em;
+          padding: 8%;
+          ul {
+            list-style: circle;
+          }
+        }
+      }
+      .service-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .service-reverse {
+      flex-direction: row-reverse;
+      background-image: url("../../../assets/icons/edge-two.svg");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
+    hr {
+      border: 5px solid #bf0022;
+      margin: 5% 15%;
+    }
+  }
+  .our-experience-container{
+    .title-our-experience{
+      font-size: 1.4em;
+    }
+    .description-our-experience{
+      font-size: 1.2em;
+    }
+    .logos-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      .logo{
+        text-align: center;
+        padding: 2% 0;
+        img{
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .services-container {
+    .service {
+      display: flex;
+      padding: 0% 2%;
+      background-size: 18%;
+      .title-info-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-left: 10%;
+        .title {
+          font-family: "PoppinsSemiBold";
+          font-size: 1.6em;
+        }
+        .info-list {
+          font-family: "PoppinsRegular";
+          font-size: 1.3em;
+          padding: 4% 8%;
+          ul {
+            list-style: circle;
+            list-style-image: url('../../../assets/icons/SimboloRojo.svg');
+          }
+        }
+      }
+      .service-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .service-reverse {
+      flex-direction: row-reverse;
+    }
+    .title-container-reverse{
+      padding-left: 0%;
+      padding-right: 10%;
+    }
+    hr {
+      border: 5px solid #bf0022;
+      margin: 5% 30%;
+    }
+  }
+  .our-experience-container{
+    .title-our-experience{
+      font-size: 1.9em;
+    }
+    .description-our-experience{
+      padding-top: 2%;
+      text-align: center;
+      font-size: 1.3em;
+    }
+    .logos-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      .logo{
+        text-align: center;
+        padding: 0;
+        img{
+          width: 80%;
+        }
+      }
+    }
+  }
+}

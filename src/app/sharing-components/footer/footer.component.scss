@@ -1,0 +1,84 @@
+.container-footer {
+  width: 100%;
+  background-color: #4d4d4d;
+  .info-footer {
+    width: 100%;
+    color: white;
+    .info-comunication {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: "PoppinsSemiBold";
+      padding: 5% 0;
+      .phone {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+      }
+      .email {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+      }
+      img {
+        width: 5%;
+        padding-right: 6px;
+      }
+    }
+    .copyright {
+      font-family: "PoppinsRegular";
+      text-align: center;
+      padding: 5% 0;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .container-footer {
+    .info-footer {
+      font-size: 1.4em;
+      .info-comunication {
+        padding: 4% 0;
+        img {
+          width: 4%;
+          padding-right: 10px;
+        }
+      }
+      .copyright {
+        padding: 4% 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container-footer {
+    min-height: 20%;
+    max-height: 20%;
+    .info-footer {
+      font-size: 1.4em;
+      .info-comunication {
+        flex-direction: row;
+        gap: 30px;
+        padding: 5% 0 1% 0;
+        .phone{
+          justify-content: right;
+        }
+        .email{
+          justify-content: left;
+        }
+        img {
+          width: 4%;
+          padding-right: 10px;
+        }
+      }
+      .copyright {
+        padding: 1% 0 3% 0;
+      }
+    }
+  }
+}
